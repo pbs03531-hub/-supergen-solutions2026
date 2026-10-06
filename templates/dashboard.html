@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}
+Lead Dashboard | SuperGen Solutions
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+
+    <span>OWNER DASHBOARD</span>
+
+    <h1>
+        Project enquiries.
+    </h1>
+
+    <p>
+        Customer enquiries submitted through the website
+        will appear here.
+    </p>
+
+</section>
+
+
+<section class="dashboard">
+
+    {% if leads %}
+
+        {% for lead in leads %}
+
+        <div class="lead-card">
+
+            <div class="lead-top">
+
+                <h2>
+                    {{ lead.name }}
+                </h2>
+
+                <span class="status">
+                    {{ lead.status }}
+                </span>
+
+            </div>
+
+
+            <p>
+                <strong>Business:</strong>
+                {{ lead.business_name or "Not provided" }}
+            </p>
+
+
+            <p>
+                <strong>Service:</strong>
+                {{ lead.service }}
+            </p>
+
+
+            <p>
+                <strong>Phone:</strong>
+                {{ lead.phone }}
+            </p>
+
+
+            <p>
+                <strong>Email:</strong>
+                {{ lead.email }}
+            </p>
+
+
+            <p>
+                <strong>City:</strong>
+                {{ lead.city or "Not provided" }}
+            </p>
+
+
+            <p>
+                <strong>Budget:</strong>
+                {{ lead.budget or "Not provided" }}
+            </p>
+
+
+            <p>
+                <strong>Message:</strong>
+                {{ lead.message or "No message" }}
+            </p>
+
+
+            <small>
+                {{ lead.created_at }}
+            </small>
+
+        </div>
+
+        {% endfor %}
+
+    {% else %}
+
+        <div class="empty">
+
+            <h2>
+                No enquiries yet.
+            </h2>
+
+            <p>
+                New customer enquiries will appear here.
+            </p>
+
+        </div>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

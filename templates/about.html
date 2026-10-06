@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}
+About | SuperGen Solutions
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+
+    <span>ABOUT SUPERGEN</span>
+
+    <h1>
+        Your Ideas.
+        <br>
+        Our Technology.
+        <br>
+        Your Growth.
+    </h1>
+
+    <p>
+        SuperGen Solutions is a technology and digital-growth
+        company focused on building useful solutions for
+        real businesses.
+    </p>
+
+</section>
+
+
+<section class="section two-column">
+
+    <div>
+
+        <span>OUR MISSION</span>
+
+        <h2>
+            Make technology useful for every business.
+        </h2>
+
+    </div>
+
+
+    <div>
+
+        <p>
+            We believe technology should solve problems,
+            not create more of them.
+        </p>
+
+        <p>
+            That's why we focus on understanding the business
+            first, validating the opportunity and then building
+            the right solution.
+        </p>
+
+        <p>
+            Whether you need a website, web application,
+            AI solution or automated workflow, we build with
+            the goal of creating real business value.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="process">
+
+    <div class="section-heading">
+
+        <span>HOW WE WORK</span>
+
+        <h2>
+            Build with purpose.
+        </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div>
+            <b>01</b>
+            <h3>UNDERSTAND</h3>
+            <p>Understand your business and its problem.</p>
+        </div>
+
+        <div>
+            <b>02</b>
+            <h3>VALIDATE</h3>
+            <p>Find out what solution actually makes sense.</p>
+        </div>
+
+        <div>
+            <b>03</b>
+            <h3>BUILD</h3>
+            <p>Build practical technology around the requirement.</p>
+        </div>
+
+        <div>
+            <b>04</b>
+            <h3>IMPROVE</h3>
+            <p>Learn from real usage and improve the system.</p>
+        </div>
+
+        <div>
+            <b>05</b>
+            <h3>SCALE</h3>
+            <p>Prepare the solution for the next stage of growth.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>
+        Let's build something useful.
+    </h2>
+
+    <p>
+        Tell us what your business needs.
+    </p>
+
+    <a href="{{ url_for('contact') }}" class="primary-btn">
+        Start a Project →
+    </a>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block title %}
+Solutions | SuperGen Solutions
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <span>BUSINESS SOLUTIONS</span>
+
+    <h1>
+        Technology designed around
+        real business problems.
+    </h1>
+
+    <p>
+        We don't start with technology. We start with the
+        problem your business needs to solve.
+    </p>
+</section>
+
+<section class="section">
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">01</div>
+
+            <h3>Business Websites</h3>
+
+            <p>
+                Professional websites that establish trust,
+                explain your services and generate enquiries.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">02</div>
+
+            <h3>Business Management Systems</h3>
+
+            <p>
+                Custom dashboards and web applications for
+                managing operations, customers, products and data.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">03</div>
+
+            <h3>AI-Powered Workflows</h3>
+
+            <p>
+                Practical AI systems that reduce repetitive work
+                and help teams make better use of their time.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">04</div>
+
+            <h3>Automation Systems</h3>
+
+            <p>
+                Connect business processes and automate repetitive
+                tasks so your team can focus on important work.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">05</div>
+
+            <h3>Customer & Lead Systems</h3>
+
+            <p>
+                Capture enquiries, organise customer information
+                and create better follow-up workflows.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">06</div>
+
+            <h3>Custom Technology</h3>
+
+            <p>
+                If your requirement doesn't fit a standard solution,
+                we'll design a system around your exact workflow.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="process">
+
+    <div class="section-heading">
+
+        <span>THE SUPERGEN APPROACH</span>
+
+        <h2>
+            Technology starts with understanding.
+        </h2>
+
+        <p>
+            We follow a simple process to avoid building
+            technology that doesn't solve the real problem.
+        </p>
+
+    </div>
+
+    <div class="process-grid">
+
+        <div>
+            <b>01</b>
+            <h3>UNDERSTAND</h3>
+            <p>Learn how the business currently works.</p>
+        </div>
+
+        <div>
+            <b>02</b>
+            <h3>VALIDATE</h3>
+            <p>Identify what actually needs to be solved.</p>
+        </div>
+
+        <div>
+            <b>03</b>
+            <h3>BUILD</h3>
+            <p>Create the right technology solution.</p>
+        </div>
+
+        <div>
+            <b>04</b>
+            <h3>IMPROVE</h3>
+            <p>Use feedback to continuously improve it.</p>
+        </div>
+
+        <div>
+            <b>05</b>
+            <h3>SCALE</h3>
+            <p>Prepare the system for future growth.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <h2>
+        Have a problem worth solving?
+    </h2>
+
+    <p>
+        Tell us what your business is trying to achieve.
+    </p>
+
+    <a
+        href="{{ url_for('contact') }}"
+        class="primary-btn"
+    >
+        Discuss Your Requirement →
+    </a>
+
+</section>
+
+{% endblock %}

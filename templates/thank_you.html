@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+Thank You | SuperGen Solutions
+{% endblock %}
+
+{% block content %}
+
+<section class="thank-you">
+
+    <div class="success-icon">
+        ✓
+    </div>
+
+    <span>
+        REQUEST RECEIVED
+    </span>
+
+    <h1>
+        We'll be in touch.
+    </h1>
+
+    <p>
+        Your project details have been received successfully.
+        We'll review your requirement and get back to you.
+    </p>
+
+    <a href="{{ url_for('home') }}" class="primary-btn">
+        Back to Home
+    </a>
+
+</section>
+
+{% endblock %}

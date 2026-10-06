@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}
+Admin Login | SuperGen Solutions
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <span>OWNER ACCESS</span>
+
+    <h1>Admin Login</h1>
+
+    <p>
+        Sign in to view project enquiries submitted through
+        the SuperGen Solutions website.
+    </p>
+</section>
+
+<section class="contact-section">
+
+    <form method="POST" class="contact-form">
+
+        <div>
+            <label for="password">Admin Password</label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter admin password"
+                required
+            >
+        </div>
+
+        <button type="submit" class="primary-btn">
+            Login →
+        </button>
+
+    </form>
+
+</section>
+
+{% endblock %}
+```
+

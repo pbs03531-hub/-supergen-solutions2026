@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}
+SuperGen Solutions | Technology Partner for Business Growth
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            TECHNOLOGY • AI • DIGITAL GROWTH
+        </div>
+
+        <h1>
+            Turn Your Business Ideas
+            <span>Into Technology That Works.</span>
+        </h1>
+
+        <p>
+            We build websites, web applications, AI solutions,
+            automation systems and digital experiences that help
+            businesses work smarter and grow faster.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="{{ url_for('contact') }}" class="primary-btn">
+                Start Your Project →
+            </a>
+
+            <a href="{{ url_for('services') }}" class="secondary-btn">
+                Explore Services
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="trust">
+
+    <p>BUILT FOR BUSINESSES THAT WANT TO GROW</p>
+
+    <div class="trust-grid">
+
+        <div>WEB DEVELOPMENT</div>
+        <div>AI SOLUTIONS</div>
+        <div>AUTOMATION</div>
+        <div>DIGITAL GROWTH</div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span>WHAT WE DO</span>
+
+        <h2>
+            Technology that solves real business problems.
+        </h2>
+
+        <p>
+            You don't need more complicated technology.
+            You need technology that actually helps your business.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">01</div>
+
+            <h3>Websites & Web Apps</h3>
+
+            <p>
+                Professional websites and custom web applications
+                designed around your business.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">02</div>
+
+            <h3>AI Solutions</h3>
+
+            <p>
+                Practical AI-powered solutions that save time,
+                improve workflows and create new opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">03</div>
+
+            <h3>Automation</h3>
+
+            <p>
+                Automate repetitive business processes and connect
+                the tools your team already uses.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">04</div>
+
+            <h3>Digital Growth</h3>
+
+            <p>
+                Digital systems, content and technology designed
+                to help your business attract and convert customers.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="process">
+
+    <div class="section-heading">
+
+        <span>OUR PROCESS</span>
+
+        <h2>
+            From idea to growth.
+        </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div>
+            <b>01</b>
+            <h3>SELL</h3>
+            <p>Understand the opportunity.</p>
+        </div>
+
+        <div>
+            <b>02</b>
+            <h3>VALIDATE</h3>
+            <p>Test what actually works.</p>
+        </div>
+
+        <div>
+            <b>03</b>
+            <h3>BUILD</h3>
+            <p>Create the right technology.</p>
+        </div>
+
+        <div>
+            <b>04</b>
+            <h3>IMPROVE</h3>
+            <p>Learn and optimise.</p>
+        </div>
+
+        <div>
+            <b>05</b>
+            <h3>SCALE</h3>
+            <p>Turn systems into growth.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>
+        Have an idea for your business?
+    </h2>
+
+    <p>
+        Tell us what you're trying to build.
+        We'll figure out the technology with you.
+    </p>
+
+    <a href="{{ url_for('contact') }}" class="primary-btn">
+        Start a Conversation →
+    </a>
+
+</section>
+
+{% endblock %}
